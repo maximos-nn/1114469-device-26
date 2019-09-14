@@ -12,7 +12,11 @@
           <img src="img/logo-device.svg" alt="Логотип магазина Device" width="163" height="35">
         </a>
         <div>
-          <!-- форма поиска -->
+          <form action="" method="get">
+            <label for="search-field" class="visually-hidden">Поисковый запрос:</label>
+            <input type="text" name="search" id="search-field" placeholder="Поиск по сайту">
+            <input type="submit" value="Найти">
+          </form>
           <ul>
             <li><a href="#">Войти</a></li>
           </ul>
@@ -182,8 +186,52 @@
         <li><a href="#">Инстаграмм</a></li>
         <li><a href="#">Твиттер</a></li>
       </ul>
-      <a href="https://htmlacademy.ru/intensive/htmlcss">HTML и CSS, уровень 1</a>
+      <a href="https://htmlacademy.ru/intensive/htmlcss" aria-label="Курс 'HTML и CSS, уровень 1'">HTML и CSS, уровень 1</a>
     </footer>
+
+    <section>
+      <h2 class="visually-hidden">Карта расположения магазина Device</h2>
+      <img src="img/map-big.jpg" alt="Карта расположения" width="960" height="559">
+      <p><button type="button">Закрыть карту</button></p>
+    </section>
+
+    <section>
+      <h2 class="visually-hidden">Форма обратной связи с магазином</h2>
+      <form action="" method="post">
+        <p>
+          <label>
+            Ваше имя:
+            <input type="text" name="name" placeholder="Имя Фамилия">
+          </label>
+          <label>
+            Ваш e-mail:
+            <input type="email" name="email" placeholder="email@example.com">
+          </label>
+        </p>
+        <label>
+          Текст письма:
+          <textarea name="message" id="" cols="100" rows="10" placeholder="В свободной форме"></textarea>
+        </label>
+        <p><input type="submit" value="Отправить"></p>
+      </form>
+      <button type="button">Закрыть форму</button>
+    </section>
+
+    <section>
+      <h2 class="visually-hidden">Меню 'Каталог товаров'</h2>
+      <ul>
+        <li><a href="#">Виртуальная реальность</a></li>
+        <li><a href="#">Моноподы для селфи</a></li>
+        <li><a href="#">Экшн-камеры</a></li>
+      </ul>
+      <ul>
+        <li><a href="#">Фитнеc-браслеты</a></li>
+        <li><a href="#">Умные часы</a></li>
+      </ul>
+      <ul>
+        <li><a href="#">Квадрокоптеры</a></li>
+      </ul>
+    </section>
 
   </body>
 </html>
