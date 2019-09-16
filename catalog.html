@@ -59,7 +59,33 @@
 
       <section>
         <h2>Фильтр:</h2>
-        <!-- форма фильтра -->
+        <form action="" method="get">
+          <fieldset>
+            <legend>Стоимость</legend>
+            <label for="filter-price-min">От</label>
+            <input type="text" name="minprice" id="filter-price-min">
+            <label for="filter-price-max">До</label>
+            <input type="text" name="maxprice" id="filter-price-max">
+          </fieldset>
+          <fieldset>
+            <legend>Цвет</legend>
+            <ul>
+              <li><label><input type="checkbox" name="black" checked>Черный</label></li>
+              <li><label><input type="checkbox" name="white">Белый</label></li>
+              <li><label><input type="checkbox" name="blue" checked>Синий</label></li>
+              <li><label><input type="checkbox" name="red" checked>Красный</label></li>
+              <li><label><input type="checkbox" name="pink">Розовый</label></li>
+            </ul>
+          </fieldset>
+          <fieldset>
+            <legend>Bluetooth</legend>
+            <ul>
+              <li><label><input type="radio" name="bluetooth" value="1" checked>Есть</label></li>
+              <li><label><input type="radio" name="bluetooth" value="0">Нет</label></li>
+            </ul>
+          </fieldset>
+          <input type="submit" value="Показать">
+        </form>
       </section>
 
       <section>
