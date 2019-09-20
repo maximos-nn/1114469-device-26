@@ -87,7 +87,12 @@ a {
   font-weight: 800;
   line-height: 24px;
   letter-spacing: 4px;
+  color: #000;
   text-transform: uppercase;
+}
+
+.main-header {
+  background-image: linear-gradient(to bottom, #fff 40px, #f7e195 40px);
 }
 
 .search-form-input {
