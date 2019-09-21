@@ -92,7 +92,7 @@ a {
 }
 
 .main-header {
-  background-image: linear-gradient(to bottom, #fff 40px, #f7e195 40px);
+  background-color: #f7e195;
 }
 
 .search-form-input {
