@@ -1,0 +1,247 @@
+@font-face {
+  font-family: "Gilroy";
+  font-style: normal;
+  font-weight: 800;
+  src:
+    local("Gilroy ExtraBold"),
+    url("../fonts/gilroyextrabold.woff2") format("woff2"),
+    url("../fonts/gilroyextrabold.woff") format("woff");
+}
+
+@font-face {
+  font-family: "Gilroy";
+  font-style: normal;
+  font-weight: 300;
+  src:
+    local("Gilroy Light"),
+    url("../fonts/gilroylight.woff2") format("woff2"),
+    url("../fonts/gilroylight.woff") format("woff");
+}
+
+@font-face {
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 400;
+  src:
+    local("Open Sans"),
+    url("../fonts/opensans.woff2") format("woff2"),
+    url("../fonts/opensans.woff") format("woff");
+}
+
+@font-face {
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 300;
+  src:
+    url("../fonts/opensanslight.woff2") format("woff2"),
+    url("../fonts/opensanslight.woff") format("woff");
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+body {
+  margin: 0;
+
+  font-family: "Open Sans", Arial, sans-serif;
+  font-size: 15px;
+  font-weight: 300;
+  line-height: 30px;
+
+  color: #464646;
+  background-color: #fff;
+}
+
+img {
+  max-width: 100%;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.site-navigation,
+.categories-navigation,
+.user-navigation,
+.footer-navigation,
+.footer-social,
+.breadcrumbs,
+.catalog {
+  list-style-type: none;
+  padding: 0;
+}
+
+.navigation-font-style,
+.button-font-style {
+  font-family: "Gilroy", Arial, sans-serif;
+  font-size: 18px;
+  font-weight: 800;
+  line-height: 24px;
+  letter-spacing: 4px;
+  color: #000;
+  text-transform: uppercase;
+}
+
+.main-header {
+  background-color: #f7e195;
+}
+
+.search-form-input {
+  opacity: 0.3;
+}
+
+.search-form-input:hover {
+  opacity: 0.6;
+}
+
+.search-form-input:focus {
+  opacity: 1;
+}
+
+.search-form-input:focus + .search-form-submit {
+  display: inline;
+}
+
+.search-form-submit {
+  display: none;
+}
+
+.categories-navigation {
+  text-transform: none;
+  display: none;
+}
+
+.breadcrumbs {
+  opacity: 0.3;
+  font-size: 14px;
+  line-height: 24px;
+  color: #000;
+}
+
+.breadcrumbs a:hover {
+  opacity: 0.6;
+}
+
+.breadcrumbs a:active {
+  opacity: 0.1;
+}
+
+.popular-item {
+  display: none;
+}
+
+.popular-item-active {
+  display: block;
+}
+
+.heading {
+  font-family: "Gilroy", Arial, sans-serif;
+  font-size: 47px;
+  font-weight: 800;
+  line-height: 48px;
+  color: #000000;
+}
+
+.delivery-services-list {
+  list-style-type: none;
+  font-family: "Gilroy", Arial, sans-serif;
+  font-size: 16px;
+  font-weight: 800;
+  line-height: 40px;
+  color: #000000;
+}
+
+.catalog-item h3 {
+  font-family: "Gilroy", Arial, sans-serif;
+  font-size: 18px;
+  font-weight: 800;
+  line-height: 24px;
+  color: #000;
+}
+.catalog-item span {
+  font-family: "Gilroy", Arial, sans-serif;
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 24px;
+  text-align: right;
+  color: #464646;
+}
+
+/* .catalog-item:hover .add-to-cart {
+  opacity: 1;
+} */
+.catalog-item img:hover ~ .add-to-cart {
+  opacity: 1;
+}
+
+.catalog-item img:hover ~ .add-to-compare {
+  opacity: 0.5;
+}
+
+.add-to-cart,
+.add-to-compare {
+  opacity: 0;
+  text-align: center;
+}
+
+.add-to-compare {
+  font-size: 13px;
+  line-height: 36px;
+  color: #000;
+}
+
+.add-to-compare:hover {
+  opacity: 1;
+}
+
+.add-to-compare:active {
+  opacity: 0.2;
+}
+
+.main-footer {
+  color: #fff;
+  background-color: #454545;
+}
+
+.main-footer .site-service,
+.main-footer .user-navigation a {
+  opacity: 0.7;
+}
+
+.main-footer .site-service:hover,
+.main-footer .user-navigation a:hover {
+  opacity: 1;
+}
+
+.main-footer .site-service:active,
+.main-footer .user-navigation a:active {
+  opacity: 0.3;
+}
+
+.footer-navigation a:hover,
+.site-navigation a:hover,
+.main-header .user-navigation a:hover,
+.main-header .site-service:hover {
+  opacity: 0.6;
+}
+
+.footer-navigation a:active,
+.site-navigation a:active,
+.main-header .user-navigation a:active,
+.main-header .site-service:active {
+  opacity: 0.3;
+}
+
+.modal-map,
+.modal-feedback {
+  display: none;
+}
