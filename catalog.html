@@ -60,8 +60,8 @@
       </ul>
 
       <section>
-        <h2>Фильтр:</h2>
-        <form action="" method="get">
+        <h2 class="filter-heading">Фильтр:</h2>
+        <form class="filter-form" action="" method="get">
           <fieldset>
             <legend>Стоимость</legend>
             <label for="filter-price-min">От</label>
@@ -86,18 +86,18 @@
               <li><label><input type="radio" name="bluetooth" value="0">Нет</label></li>
             </ul>
           </fieldset>
-          <input type="submit" value="Показать">
+          <input class="button-font-style" type="submit" value="Показать">
         </form>
       </section>
 
       <section>
-        <h2>Сортировка:</h2>
-        <ul>
-          <li><a href="#">По цене</a></li>
-          <li><a href="#">По типу</a></li>
-          <li><a href="#">По популярности</a></li>
-          <li><a href="#">По возрастанию</a></li>
-          <li><a href="#">По убыванию</a></li>
+        <h2 class="sorting-heading">Сортировка:</h2>
+        <ul class="sorting-list">
+          <li class="sorting-type sorting-active"><a href="#">По цене</a></li>
+          <li class="sorting-type"><a href="#">По типу</a></li>
+          <li class="sorting-type"><a href="#">По популярности</a></li>
+          <li class="sorting-order"><a href="#">По возрастанию</a></li>
+          <li class="sorting-order sorting-active"><a href="#">По убыванию</a></li>
         </ul>
       </section>
 
@@ -129,12 +129,12 @@
             <a class="add-to-compare" href="#">Добавить к сравнению</a>
           </li>
         </ul>
-        <ul>
-          <li><a>Назад</a></li>
-          <li><a>1</a></li>
-          <li><a href="#">2</a></li>
-          <li><a href="#">3</a></li>
-          <li><a href="#">Вперед</a></li>
+        <ul class="pagination">
+          <li class="pagination-item pagination-previous"><a>Назад</a></li>
+          <li class="pagination-item pagination-current"><a>1</a></li>
+          <li class="pagination-item"><a href="#">2</a></li>
+          <li class="pagination-item"><a href="#">3</a></li>
+          <li class="pagination-item pagination-next"><a href="#">Вперед</a></li>
         </ul>
       </section>
     </main>
