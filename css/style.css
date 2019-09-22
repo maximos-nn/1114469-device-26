@@ -75,7 +75,13 @@ a {
 .footer-navigation,
 .footer-social,
 .breadcrumbs,
-.catalog {
+.catalog,
+.categories-list,
+.services-controls,
+.brands-list,
+.sorting-list,
+.pagination,
+.filter-form ul {
   list-style-type: none;
   padding: 0;
 }
@@ -143,12 +149,38 @@ a {
   display: block;
 }
 
+.heading.popular-heading {
+  line-height: 56px;
+}
+
+.popular-value {
+  font-family: "Gilroy", Arial, sans-serif;
+  font-size: 36px;
+  font-weight: 300;
+  line-height: 48px;
+  color: #000000;
+}
+
+.popular-property {
+  font-size: 13px;
+  line-height: 20px;
+}
+
 .heading {
   font-family: "Gilroy", Arial, sans-serif;
   font-size: 47px;
   font-weight: 800;
   line-height: 48px;
   color: #000000;
+}
+
+.categories-list.navigation-font-style {
+  letter-spacing: 0;
+  text-transform: none;
+}
+
+.categories-list a:active {
+  opacity: 0.3;
 }
 
 .delivery-services-list {
@@ -160,7 +192,47 @@ a {
   color: #000000;
 }
 
-.catalog-item h3 {
+.filter-heading,
+.sorting-heading,
+.pagination-item {
+  font-family: "Gilroy", Arial, sans-serif;
+  font-size: 16px;
+  font-weight: 800;
+  line-height: 24px;
+  letter-spacing: 3px;
+  color: #000000;
+  text-transform: uppercase;
+}
+
+.sorting-type a,
+.sorting-order a {
+  font-family: "Open Sans", Arial, sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 18px;
+  opacity: 0.3;
+}
+
+.sorting-type a:hover {
+  opacity: 0.6;
+}
+
+.sorting-type a:active {
+  opacity: 1;
+}
+
+.sorting-type.sorting-active a,
+.sorting-order.sorting-active a {
+  opacity: 1;
+}
+
+.filter-form label {
+  font-size: 14px;
+  line-height: 40px;
+}
+
+.catalog-item h3,
+.filter-form legend {
   font-family: "Gilroy", Arial, sans-serif;
   font-size: 18px;
   font-weight: 800;
@@ -205,6 +277,33 @@ a {
 
 .add-to-compare:active {
   opacity: 0.2;
+}
+
+.pagination-item a {
+  opacity: 0.3;
+}
+
+.pagination-item a:hover {
+  opacity: 0.6;
+}
+
+.pagination-item a:active {
+  opacity: 1;
+}
+
+.pagination-current a,
+.pagination-current a:hover,
+.pagination-current a:active,
+.pagination-previous a,
+.pagination-previous a:hover,
+.pagination-next a:hover,
+.pagination-next a {
+  opacity: 1;
+}
+
+.pagination-previous a:active,
+.pagination-next a:active {
+  opacity: 0.3;
 }
 
 .main-footer {
