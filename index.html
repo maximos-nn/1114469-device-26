@@ -8,45 +8,51 @@
   </head>
   <body>
 
-    <header class="main-header">
-      <nav>
+    <header class="main-header container">
+      <nav class="main-navigation">
         <a>
           <img src="img/logo-device.svg" alt="Логотип магазина Device" width="163" height="35">
         </a>
-        <div>
+        <div class="nav-flex-container nav-first-row">
           <form class="search-form" action="" method="get">
             <label for="search-field" class="visually-hidden">Поисковый запрос:</label>
             <input class="search-form-input" type="text" name="search" id="search-field" placeholder="Поиск по сайту">
             <input class="search-form-submit" type="submit" value="Найти">
           </form>
-          <ul class="user-navigation">
-            <li><a href="#">Войти</a></li>
-          </ul>
-          <a class="site-service" href="#">Сравнить</a>
-          <a class="site-service" href="#">Корзина</a>
+          <div class="header-right-column nav-flex-container">
+            <ul class="user-navigation">
+              <li><a href="#">Войти</a></li>
+            </ul>
+            <div class="site-services nav-flex-container">
+              <a class="site-service" href="#">Сравнить</a>
+              <a class="site-service" href="#">Корзина</a>
+            </div>
+          </div>
         </div>
-        <div>
-          <ul class="site-navigation navigation-font-style">
-            <li>
-              <a href="catalog.html">Каталог товаров</a>
-              <ul class="categories-navigation">
-                <li><a href="#">Виртуальная реальность</a></li>
-                <li><a href="#">Моноподы для селфи</a></li>
-                <li><a href="#">Экшн-камеры</a></li>
-              </ul>
-              <ul class="categories-navigation">
-                <li><a href="#">Фитнеc-браслеты</a></li>
-                <li><a href="#">Умные часы</a></li>
-              </ul>
-              <ul class="categories-navigation">
-                <li><a href="#">Квадрокоптеры</a></li>
-              </ul>
-            </li>
-            <li><a href="#">Доставка</a></li>
-            <li><a href="#">Гарантия</a></li>
+        <ul class="site-navigation navigation-font-style nav-flex-container">
+          <li class="site-navigation-catalog">
+            <a href="catalog.html">Каталог товаров</a>
+            <ul class="categories-navigation">
+              <li><a href="#">Виртуальная реальность</a></li>
+              <li><a href="#">Моноподы для селфи</a></li>
+              <li><a href="#">Экшн-камеры</a></li>
+            </ul>
+            <ul class="categories-navigation">
+              <li><a href="#">Фитнеc-браслеты</a></li>
+              <li><a href="#">Умные часы</a></li>
+            </ul>
+            <ul class="categories-navigation">
+              <li><a href="#">Квадрокоптеры</a></li>
+            </ul>
+          </li>
+          <div class="header-right-column nav-flex-container">
+            <div class="site-navigation-services nav-flex-container">
+              <li><a href="#">Доставка</a></li>
+              <li><a href="#">Гарантия</a></li>
+            </div>
             <li><a href="#">Контакты</a></li>
-          </ul>
-        </div>
+          </div>
+        </ul>
       </nav>
     </header>
 
@@ -182,27 +188,37 @@
     </main>
 
     <footer class="main-footer">
-      <a>
-        <img src="img/logo-device.svg" alt="Логотип магазина Device" width="163" height="35">
-      </a>
-      <ul class="user-navigation">
-        <li><a href="#">Войти</a></li>
-      </ul>
-      <a class="site-service" href="#">Сравнить</a>
-      <a class="site-service" href="#">Корзина</a>
-      <p>г. Москва, ул. Строителей, 15</p>
-      <ul class="footer-navigation navigation-font-style">
-        <li><a href="#">Доставка</a></li>
-        <li><a href="#">Гарантия</a></li>
-        <li><a href="#">Контакты</a></li>
-      </ul>
-      <a href="tel:+74954959595">Тел.: +7 (495) 495-95-95</a>
-      <ul class="footer-social">
-        <li><a href="#">Фейсбук</a></li>
-        <li><a href="#">Инстаграмм</a></li>
-        <li><a href="#">Твиттер</a></li>
-      </ul>
-      <a href="https://htmlacademy.ru/intensive/htmlcss" aria-label="Курс 'HTML и CSS, уровень 1'">HTML и CSS, уровень 1</a>
+      <div class="container">
+        <div class="nav-first-row nav-flex-container">
+          <a class="logo">
+            <img src="img/logo-device.svg" alt="Логотип магазина Device" width="163" height="35">
+          </a>
+          <ul class="user-navigation nav-flex-container">
+            <li><a href="#">Войти</a></li>
+          </ul>
+          <div class="site-services nav-flex-container">
+            <a class="site-service" href="#">Сравнить</a>
+            <a class="site-service" href="#">Корзина</a>
+          </div>
+        </div>
+        <div class="nav-second-row">
+          <p class="main-footer-address">г. Москва, ул. Строителей, 15</p>
+          <ul class="footer-navigation navigation-font-style nav-flex-container">
+            <li><a href="#">Доставка</a></li>
+            <li><a href="#">Гарантия</a></li>
+            <li><a href="#">Контакты</a></li>
+          </ul>
+          <a class="main-footer-phone" href="tel:+74954959595">Тел.: +7 (495) 495-95-95</a>
+        </div>
+        <div class="nav-third-row">
+          <ul class="footer-social nav-flex-container">
+            <li><a href="#">Фейсбук</a></li>
+            <li><a href="#">Инстаграмм</a></li>
+            <li><a href="#">Твиттер</a></li>
+          </ul>
+          <a href="https://htmlacademy.ru/intensive/htmlcss" aria-label="Курс 'HTML и CSS, уровень 1'">HTML и CSS, уровень 1</a>
+        </div>
+      </div>
     </footer>
 
     <section class="modal-map">

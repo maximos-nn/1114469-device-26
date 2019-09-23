@@ -58,6 +58,9 @@ body {
 
   color: #464646;
   background-color: #fff;
+  /* background-image: url("../img/device-index.jpg");
+  background-repeat: no-repeat;
+  background-position: -107px 100%; */
 }
 
 img {
@@ -83,6 +86,7 @@ a {
 .pagination,
 .filter-form ul {
   list-style-type: none;
+  margin: 0;
   padding: 0;
 }
 
@@ -344,3 +348,99 @@ a {
 .modal-feedback {
   display: none;
 }
+
+
+/* Сетки */
+
+.container {
+  width: 1160px;
+  margin: 0 auto;
+}
+
+.main-header {
+  margin-top: 40px;
+  min-height: 300px;
+}
+
+.nav-flex-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.nav-first-row {
+  margin-bottom: 30px;
+}
+
+.main-navigation {
+  padding: 40px 60px;
+}
+
+.search-form {
+  width: 440px;
+  height: 50px;
+  margin-right: 100px;
+}
+
+.outline {
+  outline: green solid 1px;
+}
+
+.header-right-column {
+  width: 500px;
+}
+
+.main-header .user-navigation {
+  margin-right: auto;
+}
+
+.site-navigation-services {
+  width: 270px;
+}
+
+.site-services {
+  width: 215px;
+}
+
+.main-footer .user-navigation {
+  margin-right: 40px;
+}
+
+.main-footer .logo {
+  margin-right: auto;
+}
+
+.main-footer {
+  padding-top: 65px;
+  padding-bottom: 65px;
+  /* background-color: transparent; */
+}
+
+.nav-second-row {
+  display: flex;
+  /* justify-content: space-between; */
+  align-items: baseline;
+}
+
+.main-footer-address {
+  margin: 0;
+}
+
+.footer-navigation {
+  min-width: 430px;
+  color: #fff;
+}
+
+ .main-footer-address,
+ .nav-second-row .footer-navigation,
+ .main-footer-phone {
+   flex: 1;
+ }
+
+ .main-footer-phone {
+   text-align: right;
+ }
+
+ .nav-third-row {
+   display: flex;
+   min-height: 95px;
+ }
