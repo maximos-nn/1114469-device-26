@@ -360,7 +360,8 @@ a {
 }
 
 .nav-flex-container,
-.info-flex-container {
+.info-flex-container,
+.catalog-flex-container {
   display: flex;
   justify-content: space-between;
 }
@@ -457,7 +458,8 @@ a {
    margin-right: 20px;
  }
 
- .catalog {
+ .catalog,
+ .sorting {
    width: 760px;
  }
 
@@ -481,4 +483,9 @@ a {
 .catalog-heading {
   width: 1040px;
   margin: 0 auto;
+}
+
+.filter {
+  width: 200px;
+  margin-left: 60px;
 }
