@@ -361,7 +361,9 @@ a {
 
 .nav-flex-container,
 .info-flex-container,
-.catalog-flex-container {
+.catalog-flex-container,
+.categories-list,
+.brands-list {
   display: flex;
   justify-content: space-between;
 }
@@ -488,4 +490,23 @@ a {
 .filter {
   width: 200px;
   margin-left: 60px;
+}
+
+.pagination,
+.sorting-list,
+.sorting {
+  display: flex;
+}
+
+.popular-item {
+  display: flex;
+}
+
+.categories-list li {
+  width: 160px;
+  min-height: 250px;
+}
+
+.brands-list {
+  margin-bottom: 90px;
 }
