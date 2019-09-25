@@ -361,7 +361,10 @@ a {
 
 .nav-flex-container,
 .info-flex-container,
-.catalog-flex-container {
+.catalog-flex-container,
+.categories-list,
+.brands-list,
+.services-wrapper {
   display: flex;
   justify-content: space-between;
 }
@@ -488,4 +491,45 @@ a {
 .filter {
   width: 200px;
   margin-left: 60px;
+}
+
+.pagination,
+.sorting-list,
+.sorting {
+  display: flex;
+}
+
+.popular-item-active {
+  display: flex;
+  justify-content: flex-end;
+  margin-bottom: 93px;
+}
+
+.popular-item-active .popular-description {
+  margin-left: 40px;
+}
+
+.categories-list li {
+  width: 160px;
+  min-height: 250px;
+}
+
+.brands-list {
+  margin-bottom: 90px;
+}
+
+.services-controls {
+  width: 280px;
+}
+
+.services-content {
+  width: 760px;
+}
+
+.services-wrapper {
+  margin-bottom: 94px;
+}
+
+.popular-description {
+  width: 560px;
 }
