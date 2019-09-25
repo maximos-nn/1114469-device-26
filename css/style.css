@@ -363,7 +363,8 @@ a {
 .info-flex-container,
 .catalog-flex-container,
 .categories-list,
-.brands-list {
+.brands-list,
+.services-wrapper {
   display: flex;
   justify-content: space-between;
 }
@@ -498,8 +499,14 @@ a {
   display: flex;
 }
 
-.popular-item {
+.popular-item-active {
   display: flex;
+  justify-content: flex-end;
+  margin-bottom: 93px;
+}
+
+.popular-item-active .popular-description {
+  margin-left: 40px;
 }
 
 .categories-list li {
@@ -509,4 +516,20 @@ a {
 
 .brands-list {
   margin-bottom: 90px;
+}
+
+.services-controls {
+  width: 280px;
+}
+
+.services-content {
+  width: 760px;
+}
+
+.services-wrapper {
+  margin-bottom: 94px;
+}
+
+.popular-description {
+  width: 560px;
 }
