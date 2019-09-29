@@ -8,42 +8,45 @@
   </head>
   <body>
 
-    <header class="main-header container">
+    <header class="main-header index-header container">
       <nav class="main-navigation">
-        <a>
+        <a class="header-logo logo">
           <img src="img/logo-device.svg" alt="Логотип магазина Device" width="163" height="35">
         </a>
         <div class="nav-flex-container nav-first-row">
-          <form class="search-form" action="" method="get">
+          <form class="search-form" action="" method="get" autocomplete="off">
             <label for="search-field" class="visually-hidden">Поисковый запрос:</label>
-            <input class="search-form-input" type="text" name="search" id="search-field" placeholder="Поиск по сайту">
+            <input class="search-form-input" type="search" name="search" id="search-field" placeholder="Поиск по сайту">
             <input class="search-form-submit" type="submit" value="Найти">
+            <div class="search-border"></div>
           </form>
           <div class="header-right-column nav-flex-container">
             <ul class="user-navigation nav-flex-container">
-              <li><a href="#">Войти</a></li>
+              <li><a class="login" href="#">Войти</a></li>
             </ul>
             <div class="site-services nav-flex-container">
-              <a class="site-service" href="#">Сравнить</a>
-              <a class="site-service" href="#">Корзина</a>
+              <a class="site-service service-compare" href="#">Сравнить</a>
+              <a class="site-service service-cart" href="#">Корзина</a>
             </div>
           </div>
         </div>
         <ul class="site-navigation navigation-font-style nav-flex-container">
           <li class="site-navigation-catalog">
-            <a href="catalog.html">Каталог товаров</a>
-            <ul class="categories-navigation">
-              <li><a href="#">Виртуальная реальность</a></li>
-              <li><a href="#">Моноподы для селфи</a></li>
-              <li><a href="#">Экшн-камеры</a></li>
-            </ul>
-            <ul class="categories-navigation">
-              <li><a href="#">Фитнеc-браслеты</a></li>
-              <li><a href="#">Умные часы</a></li>
-            </ul>
-            <ul class="categories-navigation">
-              <li><a href="#">Квадрокоптеры</a></li>
-            </ul>
+            <a class="catalog-link" href="catalog.html">Каталог товаров</a>
+            <div class="drop-down-menu container">
+              <ul class="categories-navigation">
+                <li><a href="#">Виртуальная реальность</a></li>
+                <li><a href="#">Моноподы для селфи</a></li>
+                <li><a href="#">Экшн-камеры</a></li>
+              </ul>
+              <ul class="categories-navigation">
+                <li><a href="#">Фитнеc-браслеты</a></li>
+                <li><a href="#">Умные часы</a></li>
+              </ul>
+              <ul class="categories-navigation">
+                <li><a href="#">Квадрокоптеры</a></li>
+              </ul>
+            </div>
           </li>
           <div class="header-right-column nav-flex-container">
             <div class="site-navigation-services nav-flex-container">
@@ -176,7 +179,7 @@
       <div class="container info-flex-container">
         <section class="index-info-column">
           <h2 class="heading">О нас</h2>
-          <p>Огромный выбор гаджетов не оставит равнодушным гика, который есть в каждом из нас.</p>
+          <p>Огромный выбор гаджетов не оставит равнодушным гика, <br>который есть в каждом из нас.</p>
           <p>Мы можем доставить ваш товар в самые отдаленные точки<br>
             России! DEVICE работает со многими транспортными компаниями:</p>
           <ul class="delivery-services-list">
@@ -184,20 +187,18 @@
             <li>Автотрейдинг</li>
             <li>ЖелДорЭкспедиция</li>
           </ul>
-          <a class="button-font-style" href="">Подробнее о нас</a>
+          <a class="button button-font-style" href="">Подробнее о нас</a>
         </section>
 
         <section class="index-info-column">
           <h2 class="heading">Контакты</h2>
           <p>Вы можете забрать товар сами, заехав в наш офис.
             Заодно, вы сможете проверить работоспособность покупки. Всякое бывает.</p>
-          <a href="https://goo.gl/maps/jJphK9xeMNEc92Zz7"><img src="img/map.jpg" alt="Карта расположения" width="560" height="222"></a>
-          <p>
-            <a class="button-font-style" href="#">Напишите нам</a>
-          </p>
+          <a class="map-mini" href="https://goo.gl/maps/jJphK9xeMNEc92Zz7"><img src="img/map.jpg" alt="Карта расположения" width="560" height="222"></a>
+          <a class="button button-font-style" href="#">Напишите нам</a>
         </section>
-      </main>
       </div>
+    </main>
 
     <footer class="main-footer">
       <div class="container">
@@ -206,11 +207,11 @@
             <img src="img/logo-device.svg" alt="Логотип магазина Device" width="163" height="35">
           </a>
           <ul class="user-navigation nav-flex-container">
-            <li><a href="#">Войти</a></li>
+            <li><a class="login" href="#">Войти</a></li>
           </ul>
           <div class="site-services nav-flex-container">
-            <a class="site-service" href="#">Сравнить</a>
-            <a class="site-service" href="#">Корзина</a>
+            <a class="site-service service-compare" href="#">Сравнить</a>
+            <a class="site-service service-cart" href="#">Корзина</a>
           </div>
         </div>
         <div class="nav-second-row">
@@ -223,13 +224,12 @@
           <a class="main-footer-phone" href="tel:+74954959595">Тел.: +7 (495) 495-95-95</a>
         </div>
         <div class="nav-third-row">
-          <div class="footer-decoration"></div>
           <ul class="footer-social nav-flex-container">
-            <li><a href="#">Фейсбук</a></li>
-            <li><a href="#">Инстаграмм</a></li>
-            <li><a href="#">Твиттер</a></li>
+            <li><a class="social-button social-fb" href="#" aria-label="Фейсбук"></a></li>
+            <li><a class="social-button social-in" href="#" aria-label="Инстаграмм"></a></li>
+            <li><a class="social-button social-tw" href="#" aria-label="Твиттер"></a></li>
           </ul>
-          <a class="academy" href="https://htmlacademy.ru/intensive/htmlcss" aria-label="Курс 'HTML и CSS, уровень 1'">HTML и CSS, уровень 1</a>
+          <a class="academy" href="https://htmlacademy.ru/intensive/htmlcss" aria-label="Курс 'HTML и CSS, уровень 1'"></a>
         </div>
       </div>
     </footer>
