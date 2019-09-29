@@ -366,17 +366,20 @@ a {
 
 .main-footer .site-service,
 .main-footer .user-navigation a {
-  opacity: 0.7;
+  /* opacity: 0.7; */
+  color: rgba(255, 255, 255, 0.7);
 }
 
 .main-footer .site-service:hover,
 .main-footer .user-navigation a:hover {
-  opacity: 1;
+  /* opacity: 1; */
+  color: #fff;
 }
 
 .main-footer .site-service:active,
 .main-footer .user-navigation a:active {
-  opacity: 0.3;
+  /* opacity: 0.3; */
+  color: rgba(255, 255, 255, 0.3);
 }
 
 .footer-navigation a:hover,
@@ -841,7 +844,7 @@ a {
   height: 12px;
   top: 9px;
   left: 0px;
-  background-image: url("../img/cart.svg");
+  background-image: url("../img/cart-footer.svg");
 }
 
 .main-footer .service-compare::before {
@@ -851,7 +854,7 @@ a {
   height: 10px;
   top: 11px;
   left: 2px;
-  background-image: url("../img/compare.svg");
+  background-image: url("../img/compare-footer.svg");
 }
 
 .main-footer .login::before {
@@ -861,7 +864,7 @@ a {
   height: 12px;
   top: 4px;
   left: 0px;
-  background-image: url("../img/user.svg");
+  background-image: url("../img/user-footer.svg");
 }
 
 .academy {
@@ -948,4 +951,16 @@ a {
 .actions .button:active::before {
   height: 40px;
   top: 0;
+}
+
+.main-footer .site-service:hover::before,
+.main-footer .site-service:focus::before,
+.main-footer .user-navigation a:hover::before,
+.main-footer .user-navigation a:focus::before {
+  opacity: 0.6;
+}
+
+.main-footer .site-service:active::before,
+.main-footer .user-navigation a:active::before {
+  opacity: 0.3;
 }
