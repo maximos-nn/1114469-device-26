@@ -9,30 +9,32 @@
   <body>
 
     <header class="main-header container">
-        <nav class="main-navigation">
-          <a href="index.html">
-            <img src="img/logo-device.svg" alt="Логотип магазина Device" width="163" height="35">
-          </a>
-          <div class="nav-flex-container nav-first-row">
-            <form class="search-form" action="" method="get">
-              <label for="search-field" class="visually-hidden">Поисковый запрос:</label>
-              <input class="search-form-input" type="text" name="search" id="search-field" placeholder="Поиск по сайту">
-              <input class="search-form-submit" type="submit" value="Найти">
-            </form>
-            <div class="header-right-column nav-flex-container">
-              <ul class="user-navigation nav-flex-container">
-                <li><a href="#">Валентин Петухов</a></li>
-                <li><a href="#">Выйти</a></li>
-              </ul>
-              <div class="site-services nav-flex-container">
-                <a class="site-service" href="#">Сравнить</a>
-                <a class="site-service" href="#">Корзина</a>
-              </div>
+      <nav class="main-navigation">
+        <a class="header-logo logo" href="index.html">
+          <img src="img/logo-device.svg" alt="Логотип магазина Device" width="163" height="35">
+        </a>
+        <div class="nav-flex-container nav-first-row">
+          <form class="search-form" action="" method="get" autocomplete="off">
+            <label for="search-field" class="visually-hidden">Поисковый запрос:</label>
+            <input class="search-form-input" type="search" name="search" id="search-field" placeholder="Поиск по сайту">
+            <input class="search-form-submit" type="submit" value="Найти">
+            <div class="search-border"></div>
+          </form>
+          <div class="header-right-column nav-flex-container">
+            <ul class="user-navigation nav-flex-container">
+              <li><a class="login" href="#">Валентин Петухов</a></li>
+              <li><a href="#">Выйти</a></li>
+            </ul>
+            <div class="site-services nav-flex-container">
+              <a class="site-service service-compare" href="#">Сравнить</a>
+              <a class="site-service service-cart" href="#">Корзина</a>
             </div>
           </div>
-          <ul class="site-navigation navigation-font-style nav-flex-container">
-            <li class="site-navigation-catalog">
-              <a href="catalog.html">Каталог товаров</a>
+        </div>
+        <ul class="site-navigation navigation-font-style nav-flex-container">
+          <li class="site-navigation-catalog">
+            <a class="catalog-link" href="catalog.html">Каталог товаров</a>
+            <div class="drop-down-menu container">
               <ul class="categories-navigation">
                 <li><a href="#">Виртуальная реальность</a></li>
                 <li><a href="#">Моноподы для селфи</a></li>
@@ -45,17 +47,19 @@
               <ul class="categories-navigation">
                 <li><a href="#">Квадрокоптеры</a></li>
               </ul>
-            </li>
-            <div class="header-right-column nav-flex-container">
-              <div class="site-navigation-services nav-flex-container">
-                <li><a href="#">Доставка</a></li>
-                <li><a href="#">Гарантия</a></li>
-              </div>
-              <li><a href="#">Контакты</a></li>
             </div>
-          </ul>
-        </nav>
-      </header>
+          </li>
+          <div class="header-right-column nav-flex-container">
+            <div class="site-navigation-services nav-flex-container">
+              <li><a href="#">Доставка</a></li>
+              <li><a href="#">Гарантия</a></li>
+            </div>
+            <li><a href="#">Контакты</a></li>
+          </div>
+        </ul>
+      </nav>
+    </header>
+
 
     <main class="container">
       <div class="catalog-heading">
@@ -117,26 +121,34 @@
               <li class="catalog-list-item">
                 <img src="img/item-1.jpg.jpg" alt="Любительская селфи-палка" width="360" height="380">
                 <h3><a href="#">Любительская селфи-палка</a></h3><span>500 руб.</span>
-                <a class="add-to-cart button-font-style" href="#">В корзину</a>
-                <a class="add-to-compare" href="#">Добавить к сравнению</a>
+                <div class="actions">
+                  <a class="add-to-cart button-font-style button" href="#">В корзину</a>
+                  <a class="add-to-compare" href="#">Добавить к сравнению</a>
+                </div>
               </li>
               <li class="catalog-list-item">
                 <img src="img/item-2.jpg.jpg" alt="Профессиональная селфи-палка" width="360" height="380">
                 <h3><a href="#">Профессиональная селфи-палка</a></h3><span>1500 руб.</span>
-                <a class="add-to-cart button-font-style" href="#">В корзину</a>
-                <a class="add-to-compare" href="#">Добавить к сравнению</a>
+                <div class="actions">
+                  <a class="add-to-cart button-font-style button" href="#">В корзину</a>
+                  <a class="add-to-compare" href="#">Добавить к сравнению</a>
+                </div>
               </li>
               <li class="catalog-list-item">
                 <img src="img/item-3.jpg.jpg" alt="Непотопляемая селфи-палка" width="360" height="380">
                 <h3><a href="#">Непотопляемая селфи-палка</a></h3><span>2500 руб.</span>
-                <a class="add-to-cart button-font-style" href="#">В корзину</a>
-                <a class="add-to-compare" href="#">Добавить к сравнению</a>
+                <div class="actions">
+                  <a class="add-to-cart button-font-style button" href="#">В корзину</a>
+                  <a class="add-to-compare" href="#">Добавить к сравнению</a>
+                </div>
               </li>
               <li class="catalog-list-item">
-                <img src="img/item-4.jpg.jpg" alt="Селфи-палка Следуй за мной" width="360" height="380">
+                <img src="img/item-4.jpg.jpg" alt="Селфи-палка «Следуй за мной»" width="360" height="380">
                 <h3><a href="#">Селфи-палка Следуй за мной</a></h3><span>4900 руб.</span>
-                <a class="add-to-cart button-font-style" href="#">В корзину</a>
-                <a class="add-to-compare" href="#">Добавить к сравнению</a>
+                <div class="actions">
+                  <a class="add-to-cart button-font-style button" href="#">В корзину</a>
+                  <a class="add-to-compare" href="#">Добавить к сравнению</a>
+                </div>
               </li>
             </ul>
             <ul class="pagination">
@@ -152,40 +164,40 @@
     </main>
 
     <footer class="main-footer">
-        <div class="container">
-          <div class="nav-first-row nav-flex-container">
-            <a class="logo">
-              <img src="img/logo-device.svg" alt="Логотип магазина Device" width="163" height="35">
-            </a>
-            <ul class="user-navigation nav-flex-container">
-              <li><a href="#">Валентин Петухов</a></li>
+      <div class="container">
+        <div class="nav-first-row nav-flex-container">
+          <a class="logo" href="index.html">
+            <img src="img/logo-device-footer.svg" alt="Логотип магазина Device" width="163" height="35">
+          </a>
+          <ul class="user-navigation nav-flex-container">
+              <li><a class="login" href="#">Валентин Петухов</a></li>
               <li><a href="#">Выйти</a></li>
-            </ul>
-            <div class="site-services nav-flex-container">
-              <a class="site-service" href="#">Сравнить</a>
-              <a class="site-service" href="#">Корзина</a>
-            </div>
-          </div>
-          <div class="nav-second-row">
-            <p class="main-footer-address">г. Москва, ул. Строителей, 15</p>
-            <ul class="footer-navigation navigation-font-style nav-flex-container">
-              <li><a href="#">Доставка</a></li>
-              <li><a href="#">Гарантия</a></li>
-              <li><a href="#">Контакты</a></li>
-            </ul>
-            <a class="main-footer-phone" href="tel:+74954959595">Тел.: +7 (495) 495-95-95</a>
-          </div>
-          <div class="nav-third-row">
-            <div class="footer-decoration"></div>
-            <ul class="footer-social nav-flex-container">
-              <li><a href="#">Фейсбук</a></li>
-              <li><a href="#">Инстаграмм</a></li>
-              <li><a href="#">Твиттер</a></li>
-            </ul>
-            <a class="academy" href="https://htmlacademy.ru/intensive/htmlcss" aria-label="Курс 'HTML и CSS, уровень 1'">HTML и CSS, уровень 1</a>
+          </ul>
+          <div class="site-services nav-flex-container">
+            <a class="site-service service-compare" href="#">Сравнить</a>
+            <a class="site-service service-cart" href="#">Корзина</a>
           </div>
         </div>
-      </footer>
+        <div class="nav-second-row">
+          <p class="main-footer-address">г. Москва, ул. Строителей, 15</p>
+          <ul class="footer-navigation navigation-font-style nav-flex-container">
+            <li><a href="#">Доставка</a></li>
+            <li><a href="#">Гарантия</a></li>
+            <li><a href="#">Контакты</a></li>
+          </ul>
+          <a class="main-footer-phone" href="tel:+74954959595">Тел.: +7 (495) 495-95-95</a>
+        </div>
+        <div class="nav-third-row">
+          <ul class="footer-social nav-flex-container">
+            <li><a class="social-button social-fb" href="#" aria-label="Фейсбук"></a></li>
+            <li><a class="social-button social-in" href="#" aria-label="Инстаграмм"></a></li>
+            <li><a class="social-button social-tw" href="#" aria-label="Твиттер"></a></li>
+          </ul>
+          <a class="academy" href="https://htmlacademy.ru/intensive/htmlcss" aria-label="Курс 'HTML и CSS, уровень 1'"></a>
+        </div>
+      </div>
+    </footer>
+
 
   </body>
 </html>
