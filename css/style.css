@@ -256,7 +256,9 @@ a {
 }
 
 .catalog-list-item h3,
-.filter-form legend {
+.filter-form legend,
+.sender label,
+.message {
   font-family: "Gilroy", Arial, sans-serif;
   font-size: 18px;
   font-weight: 800;
@@ -983,10 +985,12 @@ a {
   margin: 0 auto;
   box-shadow: 0 10px 20px rgba(4, 5, 5, 0.2);
   position: relative;
+  padding-top: 90px;
+  box-sizing: border-box;
 }
 
 .modal-map button,
-.modal-feedback  button {
+.modal-feedback  .button-close {
   position: absolute;
   top: 22px;
   right: 22px;
@@ -1002,12 +1006,120 @@ a {
 
 .modal-map button:hover,
 .modal-map button:focus,
-.modal-feedback button:hover,
-.modal-feedback button:focus {
+.modal-feedback .button-close:hover,
+.modal-feedback .button-close:focus {
   opacity: 1;
 }
 
 .modal-map button:active,
 .modal-feedback button:active {
   opacity: 0.3;
+}
+
+.feedback-form {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  width: 760px;
+  margin: 0 auto;
+}
+
+.message {
+  display: block;
+}
+
+.message textarea {
+  /* display: block; */
+  box-sizing: border-box;
+  width: 760px;
+  height: 156px;
+  resize: none;
+  margin-top: 10px;
+}
+
+.sender {
+  display: flex;
+  justify-content: space-between;
+  margin: 0;
+  margin-bottom: 35px;
+}
+
+.sender label {
+  display: block;
+  /* margin: 0; */
+  width: 360px;
+}
+
+.sender input {
+  width: 360px;
+  height: 50px;
+  box-sizing: border-box;
+  margin-top: 10px;
+}
+
+.message textarea,
+.sender input {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 18px;
+}
+
+.feedback-form .button {
+  display: inline-block;
+  width: 200px;
+  height: 40px;
+  padding: 8px 0px;
+  margin-top: 30px;
+  box-sizing: border-box;
+  text-align: center;
+  vertical-align: middle;
+  position: relative;
+  border-style: none;
+  background-color: transparent;
+}
+
+.feedback-form .button::before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  width: 100%;
+  height: 8px;
+  left: 0;
+  top: 16px;
+  background-color: #f0c42f;
+}
+
+.feedback-form .button:active {
+ color: rgba(0, 0, 0, 0.3);
+}
+
+.feedback-form .button:hover::before,
+.feedback-form .button:focus::before,
+.feedback-form .button:active::before {
+  height: 40px;
+  top: 0;
+}
+
+.feedback-form input,
+.feedback-form textarea {
+  background-color: #f2f2f2;
+  border: 3px solid #f2f2f2;
+}
+
+.feedback-form input:hover,
+.feedback-form textarea:hover {
+  background-color: #eaeaea;
+  border: 3px solid #eaeaea;
+}
+
+.feedback-form input:focus,
+.feedback-form textarea:focus {
+  background-color: #fff;
+  border: 3px solid #efc52d;
+}
+
+.feedback-form input:invalid,
+.feedback-form textarea:invalid {
+  background-color: #f5d9d9;
+  border: 3px solid #f5d9d9;
 }

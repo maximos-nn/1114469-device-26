@@ -242,8 +242,8 @@
 
     <section class="modal-feedback">
       <h2 class="visually-hidden">Форма обратной связи с магазином</h2>
-      <form action="" method="post">
-        <p>
+      <form class="feedback-form" action="" method="post" autocomplete="off">
+        <p class="sender">
           <label>
             Ваше имя:
             <input type="text" name="name" placeholder="Имя Фамилия">
@@ -253,13 +253,13 @@
             <input type="email" name="email" placeholder="email@example.com">
           </label>
         </p>
-        <label>
+        <label class="message">
           Текст письма:
-          <textarea name="message" id="" cols="100" rows="10" placeholder="В свободной форме"></textarea>
+          <textarea name="message" id="" placeholder="В свободной форме"></textarea>
         </label>
-        <p><input type="submit" value="Отправить"></p>
+        <button class="button button-font-style" type="submit">Отправить</button>
       </form>
-      <button type="button" aria-label="Закрыть форму"></button>
+      <button class="button-close" type="button" aria-label="Закрыть форму"></button>
     </section>
 
   </body>
