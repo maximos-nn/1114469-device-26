@@ -657,6 +657,42 @@ a {
   margin-bottom: 90px;
 }
 
+.brands-list li {
+  position: relative;
+}
+
+.brands-list li::after {
+  content: "";
+  width: 260px;
+  height: 100px;
+  position: absolute;
+  left: 0;
+  top: 0;
+  display: none;
+  background-repeat: no-repeat;
+  background-position: 0 0;
+}
+
+.brands-list li:hover::after {
+  display: block;
+}
+
+.brand-1::after {
+  background-image: url("../img/logo-1-color.jpg");
+}
+
+.brand-2::after {
+  background-image: url("../img/logo-2-color.jpg");
+}
+
+.brand-3::after {
+  background-image: url("../img/logo-3-color.jpg");
+}
+
+.brand-4::after {
+  background-image: url("../img/logo-4-color.jpg");
+}
+
 .services-controls {
   width: 280px;
 }
