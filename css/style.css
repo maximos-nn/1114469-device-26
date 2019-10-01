@@ -447,9 +447,13 @@ a {
 }
 
 .footer-navigation a:hover,
+.footer-navigation a:focus,
 .site-navigation a:hover,
+.site-navigation a:focus,
 .main-header .user-navigation a:hover,
-.main-header .site-service:hover {
+.main-header .user-navigation a:focus,
+.main-header .site-service:hover,
+.main-header .site-service:focus {
   opacity: 0.6;
 }
 
