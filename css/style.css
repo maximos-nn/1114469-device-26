@@ -176,8 +176,74 @@ a {
   text-transform: none;
 }
 
-.categories-list a:active {
+.categories-list {
+  margin-bottom: 46px;
+}
+
+.categories-list a::before {
+  content: "";
+  display: block;
+  width: 160px;
+  height: 160px;
+  position: relative;
+  top: -35px;
+  background-color: rgba(240, 196, 46, 0.5);
+}
+
+.categories-list a::after {
+  content: "";
+  display: block;
+  width: 160px;
+  height: 160px;
+  position: absolute;
+  top: 0;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+.categories-list a:hover::before,
+.categories-list a:focus::before,
+.categories-list a:active::before {
+  background-color: rgb(240, 196, 46);
+}
+
+.categories-list a:active::after {
   opacity: 0.3;
+}
+
+.categories-list a {
+  display: block;
+  padding-top: 35px;
+  position: relative;
+}
+
+.categories-list a:active {
+  color: rgba(0, 0, 0, 0.3);
+}
+
+.categories-list .category-item-1::after {
+  background-image: url("../img/popular-1.svg");
+}
+
+.categories-list .category-item-2::after {
+  background-image: url("../img/popular-2.svg");
+  background-position: center bottom;
+}
+
+.categories-list .category-item-3::after {
+  background-image: url("../img/popular-3.svg");
+}
+
+.categories-list .category-item-4::after {
+  background-image: url("../img/popular-4.svg");
+}
+
+.categories-list .category-item-5::after {
+  background-image: url("../img/popular-5.svg");
+}
+
+.categories-list .category-item-6::after {
+  background-image: url("../img/popular-6.svg");
 }
 
 .delivery-services-list {
