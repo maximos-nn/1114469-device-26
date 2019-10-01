@@ -198,8 +198,8 @@ a {
 
 .delivery-services-list li::before {
   content: "";
-  width: 8px;
-  height: 8px;
+  width: 4px;
+  height: 4px;
   border: 2px solid #e5e5e5;
   border-radius: 50%;
   position: absolute;
