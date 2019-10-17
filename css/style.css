@@ -1499,8 +1499,9 @@ a {
   content: "";
   position: absolute;
   z-index: -2;
-  height: 288px;
+  /* height: 288px; */
   top: 100px;
+  bottom: -69px;
   left: 0;
   right: 0;
   background-color: #e5e5e5;
