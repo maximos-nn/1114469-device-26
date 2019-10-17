@@ -171,9 +171,6 @@ a {
   line-height: 48px;
   letter-spacing: 0.01em;;
   color: #000000;
-  margin-top: 44px;
-  /* margin-bottom: 44px; */
-  margin-bottom: 31px;
 }
 
 .categories-list.navigation-font-style {
@@ -638,22 +635,31 @@ a {
    background-color: #000;
  }
 
- .index-info-column p {
-   /* letter-spacing: -0.01em; */
-   margin-top: 28px;
-   margin-bottom: 28px;
+ .index-info-column h2 {
+   margin-top: 44px;
+   margin-bottom: 43px;
  }
 
- .index-info-column .button {
-   display: inline-block;
-   width: 260px;
-   height: 40px;
-   padding: 8px 0px;
-   box-sizing: border-box;
-   text-align: center;
-   vertical-align: middle;
-   position: relative;
+ .index-info-column p {
+   /* letter-spacing: -0.01em; */
+   /* margin-top: 28px; */
+   margin-bottom: 30px;
  }
+
+.index-info-about p {
+  width: 475px;
+}
+
+.index-info-column .button {
+  display: inline-block;
+  width: 260px;
+  height: 40px;
+  padding: 8px 0px;
+  box-sizing: border-box;
+  text-align: center;
+  vertical-align: middle;
+  position: relative;
+}
 
  .index-info-column .button::before {
    content: "";
@@ -782,6 +788,11 @@ a {
 
 .services-content {
   width: 760px;
+}
+
+.services-content h3 {
+  margin-top: 44px;
+  margin-bottom: 31px;
 }
 
 .services-wrapper {
@@ -962,7 +973,7 @@ a {
 
 .drop-down-menu {
   position: absolute;
-  min-height: 162px;
+  min-height: 163px;
   left: 0;
   margin-left: -60px;
   background-color: #f7e195;
@@ -1505,4 +1516,40 @@ a {
   left: 0;
   right: 0;
   background-color: #e5e5e5;
+}
+
+.services-content-delivery::after {
+  content: "";
+  width: 136px;
+  height: 164px;
+  display: block;
+  position: absolute;
+  top: 85px;
+  right: 66px;
+  background-image: url("../img/delivery.svg");
+  background-repeat: no-repeat;
+}
+
+.services-content-warranty::after {
+  content: "";
+  width: 171px;
+  height: 194px;
+  display: block;
+  position: absolute;
+  top: 61px;
+  right: 46px;
+  background-image: url("../img/warranty.svg");
+  background-repeat: no-repeat;
+}
+
+.services-content-credit::after {
+  content: "";
+  width: 156px;
+  height: 186px;
+  display: block;
+  position: absolute;
+  top: 61px;
+  right: 70px;
+  background-image: url("../img/credit.svg");
+  background-repeat: no-repeat;
 }
