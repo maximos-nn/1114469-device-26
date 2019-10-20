@@ -138,6 +138,21 @@ a {
   opacity: 0.1;
 }
 
+.breadcrumbs li {
+  position: relative;
+}
+
+.breadcrumbs li:not(:last-child)::after {
+  content: "";
+  position: absolute;
+  width: 4px;
+  height: 7px;
+  top: 9px;
+  right: -20px;
+  background-image: url("../img/nav-arrow.svg");
+  background-repeat: no-repeat;
+}
+
 .popular-item {
   display: none;
   min-height: 511px;
@@ -287,7 +302,7 @@ a {
   font-size: 16px;
   font-weight: 800;
   line-height: 24px;
-  letter-spacing: 3px;
+  letter-spacing: 0.23em;
   color: #000000;
   text-transform: uppercase;
 }
@@ -712,6 +727,8 @@ a {
 .catalog-heading {
   width: 1040px;
   margin: 0 auto;
+  padding-top: 37px;
+  margin-bottom: 46px;
 }
 
 .filter {
@@ -1553,3 +1570,12 @@ a {
   background-image: url("../img/credit.svg");
   background-repeat: no-repeat;
 }
+ .catalog-heading .heading {
+   margin: 0;
+   margin-bottom: 24px;
+ }
+
+ .sorting {
+   min-height: 70px;
+   align-items: baseline;
+ }
