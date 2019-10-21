@@ -367,13 +367,13 @@ a {
 
 .catalog-list-item h3 {
   width: 254px;
-  margin-top: 25px;
-  margin-bottom: 40px;
+  margin-top: 23px;
+  margin-bottom: 36px;
 }
 
 .catalog-list-item span {
   width: 100px;
-  margin-top: 25px;
+  margin-top: 23px;
   text-align: right;
 }
 
@@ -710,6 +710,8 @@ a {
  .catalog-list {
    display: flex;
    flex-wrap: wrap;
+   align-content: space-between;
+   min-height: 1002px;
  }
 
  .catalog-list-item:nth-of-type(odd) {
@@ -734,6 +736,7 @@ a {
 .filter {
   width: 200px;
   margin-left: 60px;
+  background-color: #efefef;
 }
 
 .pagination,
@@ -1576,6 +1579,53 @@ a {
  }
 
  .sorting {
-   min-height: 70px;
+   min-height: 51px;
    align-items: baseline;
+   padding-top: 19px;
  }
+
+ .pagination {
+   min-height: 47px;
+   align-items: baseline;
+   padding-top: 23px;
+ }
+
+ .sorting-heading {
+   margin: 0;
+   margin-right: 51px;
+ }
+
+ .sorting-type {
+   margin-right: 30px;
+ }
+
+ .catalog {
+   padding-top: 69px;
+   padding-bottom: 76px;
+ }
+
+.catalog-item-new::before {
+  content: "NEW";
+  position: absolute;
+  display: block;
+  width: 60px;
+  height: 60px;
+  top: 29px;
+  right: 27px;
+  border: 2px solid rgba(0, 0, 0, 0.1);
+  border-radius: 50%;
+  font-family: "Gilroy";
+  font-size: 14px;
+  font-weight: 800;
+  line-height: 24px;
+  letter-spacing: 1px;
+  text-align: center;
+  color: rgba(0, 0, 0, 0.2);
+  padding-top: 17px;
+  padding-left: 5px;
+  box-sizing: border-box;
+}
+
+.sorting {
+  background-color: #efefef;
+}
