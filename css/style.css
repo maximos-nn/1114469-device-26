@@ -747,9 +747,9 @@ a {
 }
 
 .filter {
-  width: 200px;
+  width: 201px;
   padding-top: 23px;
-  margin-left: 60px;
+  margin-left: 59px;
 }
 
 .pagination,
@@ -1717,5 +1717,125 @@ a {
 .filter-form fieldset {
   border: none;
   padding: 0;
+  margin: 0;
   /* border-top: 2px solid #000; */
+}
+
+.filter-form-price {
+  font-size: 0;
+}
+
+.filter-form-price label {
+  display: inline-block;
+}
+
+.filter-form-price input {
+  font-size: 15px;
+  width: 30%;
+  border: none;
+  background-color: transparent;
+}
+
+.filter-form legend {
+  width: 100%;
+  padding-top: 10px;
+  border-top: 2px solid #000;
+}
+
+.filter-form-price {
+  position: relative;
+  min-height: 140px;
+}
+
+.filter-form-price legend {
+  margin-bottom: 38px;
+}
+
+.filter-form-price::before,
+.filter-form-price::after {
+  content: "";
+  position: absolute;
+  display: block;
+  height: 2px;
+  width: calc(100% - 5px);
+  top: 71px;
+  left: 5px;
+}
+
+.filter-form-price::before {
+  background-color: #dbdbdb;
+}
+
+.filter-form-price::after {
+  width: 110px;
+  background-color: #90c82f;
+}
+
+.range-controls::before,
+.range-controls::after {
+  content: "";
+  position: absolute;
+  width: 4px;
+  height: 4px;
+  top: 61px;
+  border: 8px solid #fff;
+  border-radius: 50%;
+  background-color: #ababab;
+  box-shadow: 0 2px 1px 0 #cfcfcf;
+  cursor: pointer;
+  z-index: 1;
+
+}
+
+.range-controls:hover::before,
+.range-controls:hover::after {
+  /* border-width: 9px;
+  top: 60px; */
+  transform: scale(1.1);
+}
+
+.range-controls::before {
+  left: -5px;
+}
+
+.range-controls::after {
+  left: 108px;
+}
+
+.filter-form-color {
+  min-height: 285px;
+}
+
+.filter-form-bluetooth {
+  min-height: 165px;
+}
+
+.filter-form-submit {
+  width: 200px;
+  height: 40px;
+  position: relative;
+  background-color: transparent;
+  border: none;
+}
+
+.filter-form-submit::before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  width: 100%;
+  height: 8px;
+  left: 0;
+  top: 16px;
+  background-color: #f0c42f;
+}
+
+.filter-form-submit:active {
+  color: rgba(0, 0, 0, 0.3);
+}
+
+.filter-form-submit:hover::before,
+.filter-form-submit:focus::before,
+.filter-form-submit:active::before {
+  height: 40px;
+  top: 0;
 }

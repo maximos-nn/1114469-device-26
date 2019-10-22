@@ -76,14 +76,16 @@
           <section class="filter">
             <h2 class="filter-heading">Фильтр:</h2>
             <form class="filter-form" action="" method="get">
-              <fieldset>
+              <fieldset class="filter-form-price">
                 <legend>Стоимость</legend>
-                <label for="filter-price-min">От</label>
-                <input type="text" name="minprice" id="filter-price-min">
-                <label for="filter-price-max">До</label>
-                <input type="text" name="maxprice" id="filter-price-max">
+                <div class="range-controls">
+                  <label for="filter-price-min">от</label>
+                  <input type="text" name="minprice" id="filter-price-min" value="0">
+                  <label for="filter-price-max">до</label>
+                  <input type="text" name="maxprice" id="filter-price-max" value="5000">
+                </div>
               </fieldset>
-              <fieldset>
+              <fieldset class="filter-form-color">
                 <legend>Цвет</legend>
                 <ul>
                   <li><label><input type="checkbox" name="black" checked>Черный</label></li>
@@ -93,14 +95,14 @@
                   <li><label><input type="checkbox" name="pink">Розовый</label></li>
                 </ul>
               </fieldset>
-              <fieldset>
+              <fieldset class="filter-form-bluetooth">
                 <legend>Bluetooth</legend>
                 <ul>
                   <li><label><input type="radio" name="bluetooth" value="1" checked>Есть</label></li>
                   <li><label><input type="radio" name="bluetooth" value="0">Нет</label></li>
                 </ul>
               </fieldset>
-              <input class="button-font-style" type="submit" value="Показать">
+              <button class="filter-form-submit button-font-style" type="submit">Показать</button>
             </form>
           </section>
 
