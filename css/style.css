@@ -374,9 +374,14 @@ a {
 }
 
 .catalog-list-item h3 {
-  width: 254px;
+  width: 260px;
   margin-top: 23px;
   margin-bottom: 36px;
+}
+
+.catalog-list-item:nth-of-type(2) h3 {
+  width: 237px;
+  padding-right: 23px;
 }
 
 .catalog-list-item span {
@@ -743,6 +748,7 @@ a {
 
 .filter {
   width: 200px;
+  padding-top: 23px;
   margin-left: 60px;
 }
 
@@ -1592,9 +1598,9 @@ a {
  }
 
  .pagination {
-   min-height: 47px;
+   min-height: 70px;
    align-items: baseline;
-   padding-top: 23px;
+   background-color: rgba(0, 0, 0, 0.08);
  }
 
  .sorting-heading {
@@ -1689,3 +1695,27 @@ a {
   background-image: url("../img/icon-down-dir.svg");
 }
 
+.pagination-item {
+  padding: 23px 14px;
+}
+
+.pagination-previous {
+  padding: 23px 30px;
+  margin-right: auto;
+}
+
+.pagination-next {
+  padding: 23px 25px;
+  margin-left: auto;
+}
+
+.filter-heading {
+  margin: 0;
+  margin-bottom: 92px;
+}
+
+.filter-form fieldset {
+  border: none;
+  padding: 0;
+  /* border-top: 2px solid #000; */
+}
