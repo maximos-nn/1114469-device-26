@@ -1751,8 +1751,8 @@ a {
   margin-bottom: 38px;
 }
 
-.filter-form-price::before,
-.filter-form-price::after {
+.range-controls::before,
+.range-controls::after {
   content: "";
   position: absolute;
   display: block;
@@ -1762,18 +1762,17 @@ a {
   left: 5px;
 }
 
-.filter-form-price::before {
+.range-controls::before {
   background-color: #dbdbdb;
 }
 
-.filter-form-price::after {
+.range-controls::after {
   width: 110px;
   background-color: #90c82f;
 }
 
-.range-controls::before,
-.range-controls::after {
-  content: "";
+.range-controls-min,
+.range-controls-max {
   position: absolute;
   width: 4px;
   height: 4px;
@@ -1787,18 +1786,18 @@ a {
 
 }
 
-.range-controls:hover::before,
-.range-controls:hover::after {
+.range-controls-min:hover,
+.range-controls-max:hover {
   /* border-width: 9px;
   top: 60px; */
   transform: scale(1.1);
 }
 
-.range-controls::before {
+.range-controls-min {
   left: -5px;
 }
 
-.range-controls::after {
+.range-controls-max {
   left: 108px;
 }
 
