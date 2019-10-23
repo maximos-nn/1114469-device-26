@@ -58,9 +58,6 @@ body {
 
   color: #464646;
   background-color: #fff;
-  /* background-image: url("../img/device-index.jpg");
-  background-repeat: no-repeat;
-  background-position: 50% 0; */
 }
 
 img {
@@ -1725,13 +1722,23 @@ a {
   font-size: 0;
 }
 
+.filter-form-price label,
+.filter-form-price input {
+  font-family: "Gilroy";
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 24px;
+  color: rgba(0, 0, 0, 0.2);
+}
+
 .filter-form-price label {
   display: inline-block;
 }
 
 .filter-form-price input {
-  font-size: 15px;
-  width: 30%;
+  width: 33%;
+  padding: 0 5px;
+  margin: 8px 0;
   border: none;
   background-color: transparent;
 }
@@ -1803,6 +1810,7 @@ a {
 
 .filter-form-color {
   min-height: 285px;
+  color: #000;
 }
 
 .filter-form-bluetooth {
@@ -1837,4 +1845,79 @@ a {
 .filter-form-submit:active::before {
   height: 40px;
   top: 0;
+}
+
+.filter-form-color ul,
+.filter-form-bluetooth ul {
+  margin-top: 18px;
+}
+
+.filter-form-color label,
+.filter-form-bluetooth label {
+  padding-left: 40px;
+  position: relative;
+}
+
+.filter-form-color span::before {
+  content: "";
+  position: absolute;
+  width: 27px;
+  height: 23px;
+  left: -1px;
+  top: -2px;
+  background-image: url("../img/checkbox-off.svg");
+  background-repeat: no-repeat;
+}
+
+.filter-form-color input:checked + span::before {
+  background-image: url("../img/checkbox-on.svg");
+}
+
+.filter-form-color label:hover span::before,
+.filter-form-color input:focus + span::before {
+  opacity: 0.6;
+}
+
+.filter-form-color input:active + span::before {
+  opacity: 1;
+}
+
+.filter-form-color input:disabled + span::before {
+  opacity: 0.25;
+}
+
+.filter-form-color input:disabled + span {
+  color: #a6a6a6;
+}
+
+.filter-form-bluetooth span::before {
+  content: "";
+  position: absolute;
+  width: 25px;
+  height: 25px;
+  left: -1px;
+  top: -4px;
+  background-image: url("../img/radio-off.svg");
+  background-repeat: no-repeat;
+}
+
+.filter-form-bluetooth input:checked + span::before {
+  background-image: url("../img/radio-on.svg");
+}
+
+.filter-form-bluetooth label:hover span::before,
+.filter-form-bluetooth input:focus + span::before {
+  opacity: 0.6;
+}
+
+.filter-form-bluetooth input:active + span::before {
+  opacity: 1;
+}
+
+.filter-form-bluetooth input:disabled + span::before {
+  opacity: 0.25;
+}
+
+.filter-form-bluetooth input:disabled + span {
+  color: #a6a6a6;
 }
