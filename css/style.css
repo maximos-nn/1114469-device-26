@@ -1157,13 +1157,27 @@ a {
 }
 
 .modal-feedback {
+  position: fixed;
+  display: none;
   width: 960px;
   height: 553px;
-  margin: 0 auto;
-  box-shadow: 0 10px 20px rgba(4, 5, 5, 0.2);
-  position: relative;
+  top: 200px;
+  left: 50%;
+  /* margin: 0 auto; */
+  margin-left: -480px;
   padding-top: 90px;
   box-sizing: border-box;
+  background-color: #fff;
+  box-shadow: 0 10px 20px rgba(4, 5, 5, 0.2);
+}
+
+.modal-show {
+  display: block;
+  animation: bounce 0.6s;
+}
+
+.modal-error {
+  animation: shake 0.6s;
 }
 
 .modal-map button,
@@ -1911,4 +1925,44 @@ a {
 
 .filter-form-bluetooth input:disabled + span {
   color: #a6a6a6;
+}
+
+@keyframes bounce {
+  0% {
+    transform: translateY(-2000px);
+  }
+
+  70% {
+    transform: translateY(30px);
+  }
+
+  90% {
+    transform: translateY(-10px);
+  }
+
+  100% {
+    transform: translateY(0);
+  }
+}
+
+@keyframes shake {
+  0%,
+  100% {
+    transform: translateX(0);
+  }
+
+  10%,
+  30%,
+  50%,
+  70%,
+  90% {
+    transform: translateX(-10px);
+  }
+
+  20%,
+  40%,
+  60%,
+  80% {
+    transform: translateX(10px);
+  }
 }
