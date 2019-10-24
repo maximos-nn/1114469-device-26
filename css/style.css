@@ -101,10 +101,6 @@ a {
   text-transform: uppercase;
 }
 
-.main-header {
-  background-color: #f7e195;
-}
-
 .categories-navigation {
   font-family: "Open Sans", Arial, sans-serif;
   font-size: 15px;
@@ -519,8 +515,7 @@ a {
 }
 
 .index-header {
-  min-height: 299px;
-  position: relative;
+  min-height: 233px;
 }
 
 .nav-flex-container,
@@ -544,10 +539,6 @@ a {
 
 .nav-first-row {
   margin-bottom: 30px;
-}
-
-.main-navigation {
-  padding: 33px 60px;
 }
 
 .outline {
@@ -847,6 +838,8 @@ a {
 
 .main-navigation {
   position: relative;
+  background-color: #f7e195;
+  padding: 33px 60px;
 }
 
 .header-logo {
