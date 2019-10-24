@@ -456,6 +456,9 @@ a {
 }
 
 .main-footer {
+  min-width: 1160px;
+  padding-top: 63px;
+  padding-bottom: 65px;
   color: #fff;
   background-color: #454545;
 }
@@ -581,12 +584,6 @@ a {
 
 .logo[href]:active {
   opacity: 0.3;
-}
-
-.main-footer {
-  padding-top: 63px;
-  padding-bottom: 65px;
-  /* background-color: transparent; */
 }
 
 .nav-second-row {
