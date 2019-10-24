@@ -509,15 +509,6 @@ a {
   padding: 0 20px;
 }
 
-.main-header {
-  margin-top: 40px;
-  min-height: 186px;
-}
-
-.index-header {
-  min-height: 233px;
-}
-
 .nav-flex-container,
 .info-flex-container,
 .catalog-flex-container,
@@ -838,8 +829,17 @@ a {
 
 .main-navigation {
   position: relative;
-  background-color: #f7e195;
+  min-height: 120px;
   padding: 33px 60px;
+  background-color: #f7e195;
+}
+
+.main-header {
+  margin-top: 40px;
+}
+
+.index-header {
+  min-height: 233px;
 }
 
 .header-logo {
