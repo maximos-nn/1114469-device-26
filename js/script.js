@@ -6,6 +6,10 @@ var nameField = feedbackForm.querySelector("[name=name]");
 var emailField = feedbackForm.querySelector("[name=email]");
 var messageField = feedbackForm.querySelector("[name=message]");
 
+var mapLink = document.querySelector(".map-mini");
+var map = document.querySelector(".modal-map");
+var mapCloseButton = map.querySelector("button");
+
 var isStorageSupported = true;
 var storageName = "";
 var storageEmail = "";
@@ -35,11 +39,21 @@ contactLink.addEventListener("click", function (evt) {
   }
 });
 
+mapLink.addEventListener("click", function (evt) {
+  evt.preventDefault();
+  map.classList.add("modal-show");
+});
+
 feedbackCloseButton.addEventListener("click", function (evt) {
   evt.preventDefault();
   feedback.classList.remove("modal-show");
   feedback.classList.remove("modal-error");
 });
+
+mapCloseButton.addEventListener("click", function (evt) {
+  evt.preventDefault();
+  map.classList.remove("modal-show");
+})
 
 feedbackForm.addEventListener("submit", function (evt) {
   if (!(nameField.value && emailField.value && messageField.value)) {
@@ -61,6 +75,9 @@ window.addEventListener("keydown", function (evt) {
     if (feedback.classList.contains("modal-show")) {
       feedback.classList.remove("modal-show");
       feedback.classList.remove("modal-error");
+    }
+    if (map.classList.contains("modal-show")) {
+      map.classList.remove("modal-show");
     }
   }
 });
