@@ -64,3 +64,48 @@ window.addEventListener("keydown", function (evt) {
     }
   }
 });
+
+
+function addControlHandler(
+  controlsList,
+  contentList,
+  index,
+  contentClassName,
+  controlClassName
+  )
+  {
+  controlsList[index].addEventListener("click", function () {
+    for (var i = 0; i < contentList.length; i++) {
+      controlsList[i].classList.remove(controlClassName);
+      contentList[i].classList.remove(contentClassName);
+    }
+    controlsList[index].classList.add(controlClassName);
+    contentList[index].classList.add(contentClassName);
+  });
+}
+
+var servicesControls = document.querySelectorAll(".services-controls button");
+var servicesContent = document.querySelector(".services-content").children;
+
+for (var i = 0; i < servicesControls.length; i++) {
+  addControlHandler(
+    servicesControls,
+    servicesContent,
+    i,
+    "services-content-active",
+    "button-active"
+    );
+}
+
+var favControls = document.querySelectorAll(".popular-controls button");
+var favContent = document.querySelectorAll(".popular-list li");
+
+for (var i = 0; i < favControls.length; i++) {
+  addControlHandler(
+    favControls,
+    favContent,
+    i,
+    "popular-item-active",
+    "popular-controls-active"
+    );
+}
