@@ -522,6 +522,7 @@ a {
 .main-header .nav-flex-container,
 .main-footer .nav-flex-container {
   align-items: center;
+  flex-wrap: wrap;
 }
 
 .main-footer .nav-first-row.nav-flex-container {
@@ -542,10 +543,6 @@ a {
 
 .main-header .user-navigation {
   margin-right: auto;
-}
-
-.site-navigation-services {
-  width: 273px;
 }
 
 .site-services {
@@ -589,15 +586,6 @@ a {
   min-width: 430px;
   color: #fff;
 }
-
- /* .main-footer-address,
- .nav-second-row .footer-navigation,
- .main-footer-phone, */
- /* .footer-decoration,
- .footer-social,
- .academy {
-   flex: 1;
- } */
 
  .main-footer-phone,
  .academy {
@@ -646,8 +634,6 @@ a {
  }
 
  .index-info-column p {
-   /* letter-spacing: -0.01em; */
-   /* margin-top: 28px; */
    margin-bottom: 30px;
  }
 
@@ -821,8 +807,8 @@ a {
 }
 
 .popular-description.popular-01 {
-  width: 481px;
-  padding-right: 79px;
+  width: 494px;
+  padding-right: 66px;
 }
 
 /* Декоративные элементы */
@@ -915,13 +901,13 @@ a {
 
 .search-form-submit {
   width: 85px;
-  height: 49px;
+  min-height: 49px;
   border: 2px solid #000;
   background-color: transparent;
   font-size: 15px;
   font-weight: 300;
   line-height: 30px;
-  padding: 0;
+  vertical-align: top;
 }
 
 .search-form-input:focus + .search-form-submit:hover,
@@ -981,6 +967,8 @@ a {
 
 .site-navigation-catalog {
   position: relative;
+  padding-right: 27px;
+  margin-right: auto;
 }
 
 .site-navigation-catalog::after {
@@ -989,7 +977,7 @@ a {
   width: 16px;
   height: 16px;
   top: 3px;
-  right: -27px;
+  right: 0px;
   background-image: url("../img/plus.svg");
   opacity: 0.3;
 }
@@ -1354,7 +1342,6 @@ a {
   background-color: transparent;
   border-radius: 50%;
   border: none;
-  /* border: 1px solid #000; */
   background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='23' height='23' viewBox='0 0 23 23'%3E%3Cpath d='M11.5 2c5.238 0 9.5 4.262 9.5 9.5S16.738 21 11.5 21 2 16.738 2 11.5 6.262 2 11.5 2m0-2C5.149 0 0 5.149 0 11.5 0 17.852 5.149 23 11.5 23 17.852 23 23 17.852 23 11.5 23 5.149 17.852 0 11.5 0z'/%3E%3C/svg%3E");
   background-repeat: no-repeat;
   background-position: 0 0;
@@ -1980,4 +1967,12 @@ a {
   80% {
     transform: translateX(10px);
   }
+}
+
+.site-navigation-delivery {
+  margin-right: 34px;
+}
+
+.site-navigation-warranty {
+  margin-right: 105px;
 }

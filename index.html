@@ -16,7 +16,7 @@
         <img src="img/logo-device.svg" alt="Логотип магазина Device" width="163" height="35">
       </a>
       <div class="nav-flex-container nav-first-row">
-        <form class="search-form" action="" method="get" autocomplete="off">
+        <form class="search-form" action="search.html" method="get" autocomplete="off">
           <label for="search-field" class="visually-hidden">Поисковый запрос:</label>
           <input class="search-form-input" type="search" name="search" id="search-field" placeholder="Поиск по сайту">
           <button class="search-form-submit" type="submit">Найти</button>
@@ -49,13 +49,9 @@
             </ul>
           </div>
         </li>
-        <div class="header-right-column nav-flex-container">
-          <div class="site-navigation-services nav-flex-container">
-            <li><a href="#">Доставка</a></li>
-            <li><a href="#">Гарантия</a></li>
-          </div>
-          <li><a href="#">Контакты</a></li>
-        </div>
+        <li class="site-navigation-delivery"><a href="#">Доставка</a></li>
+        <li class="site-navigation-warranty"><a href="#">Гарантия</a></li>
+        <li><a href="#">Контакты</a></li>
       </ul>
     </nav>
   </header>
@@ -247,14 +243,14 @@
 
   <section class="modal-map">
     <h2 class="visually-hidden">Карта расположения магазина Device</h2>
-    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2249.1125488779976!2d37.52742931592807!3d55.687030980535816!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46b54cf65f5c8955%3A0x694710ccd55501e!2z0YPQuy4g0KHRgtGA0L7QuNGC0LXQu9C10LksIDE1LCDQnNC-0YHQutCy0LAsIDExOTMxMQ!5e0!3m2!1sru!2sru!4v1572032537894!5m2!1sru!2sru" width="960" height="559" frameborder="0" allowfullscreen=""></iframe>
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2249.1125488779976!2d37.52742931592807!3d55.687030980535816!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46b54cf65f5c8955%3A0x694710ccd55501e!2z0YPQuy4g0KHRgtGA0L7QuNGC0LXQu9C10LksIDE1LCDQnNC-0YHQutCy0LAsIDExOTMxMQ!5e0!3m2!1sru!2sru!4v1572032537894!5m2!1sru!2sru" width="960" height="559" allowfullscreen=""></iframe>
     <img src="img/map-big.jpg" alt="Карта расположения" width="960" height="559">
     <button type="button" aria-label="Закрыть карту"></button>
   </section>
 
   <section class="modal-feedback">
     <h2 class="visually-hidden">Форма обратной связи с магазином</h2>
-    <form class="feedback-form" action="" method="post" autocomplete="off">
+    <form class="feedback-form" action="feedback.html" method="post" autocomplete="off">
       <p class="sender">
         <label>
           Ваше имя:
@@ -267,7 +263,7 @@
       </p>
       <label class="message">
         Текст письма:
-        <textarea name="message" id="" placeholder="В свободной форме"></textarea>
+        <textarea name="message" placeholder="В свободной форме"></textarea>
       </label>
       <button class="button button-font-style" type="submit">Отправить</button>
     </form>
