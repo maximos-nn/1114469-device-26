@@ -1331,7 +1331,7 @@ a {
   height: 12px;
   position: absolute;
   top: 341px;
-  right: 83px;
+  right: 103px;
 }
 
 .popular-controls button {
@@ -1381,7 +1381,6 @@ a {
 }
 
 .popular-description::before {
-  /* content: ""; */
   position: absolute;
   display: inline-block;
   font-family: "Gilroy", Arial, sans-serif;
@@ -1389,11 +1388,9 @@ a {
   font-weight: 800;
   line-height: 179px;
   letter-spacing: 0.01em;
-  /* text-align: right; */
   color: #fff;
-  /* z-index: 1; */
   top: 0;
-  right: 46px;
+  right: 66px;
 }
 
 .popular-01::before {
@@ -1565,7 +1562,7 @@ a {
   display: block;
   position: absolute;
   top: 85px;
-  right: 66px;
+  right: 86px;
   background-image: url("../img/delivery.svg");
   background-repeat: no-repeat;
 }
@@ -1577,7 +1574,7 @@ a {
   display: block;
   position: absolute;
   top: 61px;
-  right: 46px;
+  right: 66px;
   background-image: url("../img/warranty.svg");
   background-repeat: no-repeat;
 }
@@ -1589,7 +1586,7 @@ a {
   display: block;
   position: absolute;
   top: 61px;
-  right: 70px;
+  right: 90px;
   background-image: url("../img/credit.svg");
   background-repeat: no-repeat;
 }
