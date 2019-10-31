@@ -1313,11 +1313,14 @@ a {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  width: 78px;
   height: 12px;
   position: absolute;
-  top: 341px;
+  bottom: 158px;
   right: 103px;
+}
+
+.popular-controls li:not(:last-child) {
+  margin-right: 21px;
 }
 
 .popular-controls button {
@@ -1374,6 +1377,7 @@ a {
   font-weight: 800;
   line-height: 179px;
   letter-spacing: 0.01em;
+  vertical-align: top;
   color: #fff;
   top: 0;
   right: 66px;
@@ -1669,6 +1673,7 @@ a {
   display: inline-block;
   width: 11px;
   height: 10px;
+  vertical-align: baseline;
   background-repeat: no-repeat;
 }
 
@@ -1720,6 +1725,7 @@ a {
 
 .filter-form-price label {
   display: inline-block;
+  vertical-align: baseline;
 }
 
 .filter-form-price input {
