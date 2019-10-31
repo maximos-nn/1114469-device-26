@@ -14,7 +14,7 @@
           <img src="img/logo-device.svg" alt="Логотип магазина Device" width="163" height="35">
         </a>
         <div class="nav-flex-container nav-first-row">
-          <form class="search-form" action="" method="get" autocomplete="off">
+          <form class="search-form" action="search.html" method="get" autocomplete="off">
             <label for="search-field" class="visually-hidden">Поисковый запрос:</label>
             <input class="search-form-input" type="search" name="search" id="search-field" placeholder="Поиск по сайту">
             <input class="search-form-submit" type="submit" value="Найти">
@@ -49,13 +49,9 @@
               </ul>
             </div>
           </li>
-          <div class="header-right-column nav-flex-container">
-            <div class="site-navigation-services nav-flex-container">
-              <li><a href="#">Доставка</a></li>
-              <li><a href="#">Гарантия</a></li>
-            </div>
-            <li><a href="#">Контакты</a></li>
-          </div>
+          <li class="site-navigation-delivery"><a href="#">Доставка</a></li>
+          <li class="site-navigation-warranty"><a href="#">Гарантия</a></li>
+          <li><a href="#">Контакты</a></li>
         </ul>
       </nav>
     </header>
@@ -75,7 +71,7 @@
         <div class="catalog-flex-container container">
           <section class="filter">
             <h2 class="filter-heading">Фильтр:</h2>
-            <form class="filter-form" action="" method="get">
+            <form class="filter-form" action="filter.html" method="get">
               <fieldset class="filter-form-price">
                 <legend>Стоимость</legend>
                 <div class="range-controls">
@@ -216,9 +212,9 @@
         </div>
         <div class="nav-third-row">
           <ul class="footer-social nav-flex-container">
-            <li><a class="social-button social-fb" href="#" aria-label="Фейсбук"></a></li>
-            <li><a class="social-button social-in" href="#" aria-label="Инстаграмм"></a></li>
-            <li><a class="social-button social-tw" href="#" aria-label="Твиттер"></a></li>
+            <li class="footer-social-item"><a class="social-button social-fb" href="#" aria-label="Фейсбук"></a></li>
+            <li class="footer-social-item"><a class="social-button social-in" href="#" aria-label="Инстаграмм"></a></li>
+            <li class="footer-social-item"><a class="social-button social-tw" href="#" aria-label="Твиттер"></a></li>
           </ul>
           <a class="academy" href="https://htmlacademy.ru/intensive/htmlcss" aria-label="Курс 'HTML и CSS, уровень 1'"></a>
         </div>
