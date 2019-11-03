@@ -69,21 +69,7 @@ a {
   color: inherit;
 }
 
-.site-navigation,
-.categories-navigation,
-.user-navigation,
-.footer-navigation,
-.footer-social,
-.breadcrumbs,
-.catalog-list,
-.categories-list,
-.popular-controls,
-.popular-list,
-.services-controls,
-.brands-list,
-.sorting-list,
-.pagination,
-.filter-form ul {
+.list-style-reset {
   list-style-type: none;
   margin: 0;
   padding: 0;
